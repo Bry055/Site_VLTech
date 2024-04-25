@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-image: url(manutenção.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    display: inline-block;
+}
+h2{
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 10px 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões */
+ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+.send_button{
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #020202;
+  background: #dadd37;
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size:15px;
+  font-family: "Arial", sans-serif; 
+  font-weight: bold; 
+  margin-left: -183px;
+  margin-top: 80px;
+
+}
+.send_button:hover{
+
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+
+.botao_loja {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #020202;
+  background: #dadd37;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Arial", sans-serif; 
+  font-weight: bold; 
+  margin-left: 10px;
+}
+
+.botao_loja:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+.botao_loja:before {
+  content: '';
+  background: linear-gradient(30deg,#000000, #333, #fff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  border-radius: 10px;
+}
+
+.botao_loja:active {
+  color: #dadd37
+}
+
+.botao_loja:active:after {
+  background: transparent;
+}
+
+.botao_loja:hover:before {
+  opacity: 1;
+}
+
+.botao_loja:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #F0F8FF;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+.botao_celulares {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #020202;
+  background: #dadd37;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Arial", sans-serif; 
+  font-weight: bold; 
+  margin-left: 10px;
+}
+
+.botao_celulares:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+.botao_celulares:before {
+  content: '';
+  background: linear-gradient(30deg,#000000, #333, #fff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  border-radius: 10px;
+}
+
+.botao_celulares:active {
+  color: #dadd37
+}
+
+.botao_celulares:active:after {
+  background: transparent;
+}
+
+.botao_celulares:hover:before {
+  opacity: 1;
+}
+
+.botao_celulares:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFE4C4;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+
+.botao_computadores {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #020202;
+  background: #dadd37;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Arial", sans-serif; 
+  font-weight: bold; 
+  margin-left: 10px;
+}
+
+.botao_computadores:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+.botao_computadores:before {
+  content: '';
+  background: linear-gradient(30deg,#000000, #333, #fff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  border-radius: 10px;
+}
+
+.botao_computadores:active {
+  color: #dadd37
+}
+
+.botao_computadores:active:after {
+  background: transparent;
+}
+
+.botao_computadores:hover:before {
+  opacity: 1;
+}
+
+.botao_computadores:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #EEE8AA;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+.botao_Local {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #020202;
+  background: #dadd37;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Arial", sans-serif; 
+  font-weight: bold; 
+  margin-left: 15px;
+}
+
+.botao_Local:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+.botao_Local:before {
+  content: '';
+  background: linear-gradient(30deg,#000000, #333, #fff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  border-radius: 10px;
+}
+
+.botao_Local:active {
+  color: #dadd37
+}
+
+.botao_Local:active:after {
+  background: transparent;
+}
+
+.botao_Local:hover:before {
+  opacity: 1;
+}
+
+.botao_Local:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFE4C4;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
